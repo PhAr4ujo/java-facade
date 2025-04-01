@@ -6,7 +6,7 @@ This was implemented using Java 21.0.4
 
 
 
-To run this code you can simplily unzip or clone it into Intellij or do the following steps:
+To run this code you can simply unzip or clone it into Intellij or do the following steps:
 
 1 - First be in the root of the project, after type this commands to make the java bytecode and run it:
 
