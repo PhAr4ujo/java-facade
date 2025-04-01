@@ -15,10 +15,10 @@ public class Facade {
 
     public boolean toggle(){
         String device = this.getDevice();
-        if (device.equals("Radio")) {
+        if (device.equals("Radio (Radio)")) {
             RadioService radioService = new RadioService();
             return radioService.toggle();
-        }else if (device.equals("Toca Discos")) {
+        }else if (device.equals("Record Player (Toca Discos)")) {
             RecordPlayerService recordPlayerService = new RecordPlayerService();
             return recordPlayerService.toggle();
         }else{
@@ -29,10 +29,10 @@ public class Facade {
 
     public int changeVolume(int amount){
         String device = this.getDevice();
-        if (device.equals("Radio")) {
+        if (device.equals("Radio (Radio)")) {
             RadioService radioService = new RadioService();
             return radioService.changeVolume(amount);
-        }else if (device.equals("Toca Discos")) {
+        }else if (device.equals("Record Player (Toca Discos)")) {
             RecordPlayerService recordPlayerService = new RecordPlayerService();
             return recordPlayerService.changeVolume(amount);
         }else{
@@ -43,10 +43,10 @@ public class Facade {
 
     public String equalize(){
         String device = this.getDevice();
-        if (device.equals("Radio")) {
+        if (device.equals("Radio (Radio)")) {
             RadioService radioService = new RadioService();
             return radioService.equalize();
-        }else if (device.equals("Toca Discos")) {
+        }else if (device.equals("Record Player (Toca Discos)")) {
             RecordPlayerService recordPlayerService = new RecordPlayerService();
             return recordPlayerService.equalize();
         }else{
@@ -57,10 +57,10 @@ public class Facade {
 
     public String controlIntensity(){
         String device = this.getDevice();
-        if (device.equals("Radio")) {
+        if (device.equals("Radio (Radio)")) {
             RadioService radioService = new RadioService();
             return radioService.controlIntensity();
-        }else if (device.equals("Toca Discos")) {
+        }else if (device.equals("Record Player (Toca Discos)")) {
             RecordPlayerService recordPlayerService = new RecordPlayerService();
             return recordPlayerService.controlIntensity();
         }else{
@@ -74,9 +74,9 @@ public class Facade {
         Scanner scanner = new Scanner(System.in);
 
         String[] devices = {
-                "Radio",
-                "Toca Discos",
-                "Caixa de Som Portátil",
+                "Radio (Radio)",
+                "Record Player (Toca Discos)",
+                "Sound Bar (Caixa de Som Portátil)",
         };
 
         int counter = 0;
