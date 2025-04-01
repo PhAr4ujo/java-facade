@@ -84,10 +84,10 @@ public class Facade {
             System.out.println("Device " + counter + ": " + device);
             counter++;
         }
-        System.out.println("Select a device to toggle: ");
+        System.out.println("Select a device to operate: ");
         int option = scanner.nextInt();
 
-        while(option < 0 || option > devices.length){
+        while(option < 0 || option >= devices.length){
             System.out.println("Invalid option");
             System.out.println("Select a device to operate: ");
             option = scanner.nextInt();
