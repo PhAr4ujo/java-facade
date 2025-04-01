@@ -13,7 +13,6 @@ To run this code you can simplily unzip or clone it into Intellij or do the foll
 ```
     javac Main.java
     java Main
-
 ```
 
 
