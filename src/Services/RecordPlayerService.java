@@ -70,7 +70,7 @@ public class RecordPlayerService implements IRecordPlayerService {
             System.out.println("Enter option: ");
             option = scan.nextInt();
 
-            if (option < 0 || option > options.length) {
+            if (option < 0 || option >= options.length) {
                 System.out.println("Invalid option");
             }else{
                 break;
